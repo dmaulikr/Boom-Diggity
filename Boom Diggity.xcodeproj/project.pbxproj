@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93154ED01AB7FBD6008E09EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ECF1AB7FBD6008E09EC /* Foundation.framework */; };
+		93154ED21AB7FBD6008E09EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ED11AB7FBD6008E09EC /* CoreGraphics.framework */; };
+		93154ED41AB7FBD6008E09EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ED31AB7FBD6008E09EC /* UIKit.framework */; };
+		93154ED61AB7FBD6008E09EC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ED51AB7FBD6008E09EC /* SpriteKit.framework */; };
+		93154EDC1AB7FBD6008E09EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93154EDA1AB7FBD6008E09EC /* InfoPlist.strings */; };
+		93154EDE1AB7FBD6008E09EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EDD1AB7FBD6008E09EC /* main.m */; };
+		93154EE21AB7FBD6008E09EC /* BDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EE11AB7FBD6008E09EC /* BDAppDelegate.m */; };
+		93154EE51AB7FBD6008E09EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93154EE31AB7FBD6008E09EC /* Main.storyboard */; };
+		93154EE81AB7FBD6008E09EC /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EE71AB7FBD6008E09EC /* BDViewController.m */; };
+		93154EEB1AB7FBD6008E09EC /* BDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EEA1AB7FBD6008E09EC /* BDMyScene.m */; };
+		93154EED1AB7FBD6008E09EC /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 93154EEC1AB7FBD6008E09EC /* Spaceship.png */; };
+		93154EEF1AB7FBD6008E09EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93154EEE1AB7FBD6008E09EC /* Images.xcassets */; };
+		93154EF61AB7FBD6008E09EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154EF51AB7FBD6008E09EC /* XCTest.framework */; };
+		93154EF71AB7FBD6008E09EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ECF1AB7FBD6008E09EC /* Foundation.framework */; };
+		93154EF81AB7FBD6008E09EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ED31AB7FBD6008E09EC /* UIKit.framework */; };
+		93154F001AB7FBD6008E09EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93154EFE1AB7FBD6008E09EC /* InfoPlist.strings */; };
+		93154F021AB7FBD6008E09EC /* Boom_DiggityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154F011AB7FBD6008E09EC /* Boom_DiggityTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93154EF91AB7FBD6008E09EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93154EC41AB7FBD6008E09EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93154ECB1AB7FBD6008E09EC;
+			remoteInfo = "Boom Diggity";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93154ECC1AB7FBD6008E09EC /* Boom Diggity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boom Diggity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93154ECF1AB7FBD6008E09EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93154ED11AB7FBD6008E09EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		93154ED31AB7FBD6008E09EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		93154ED51AB7FBD6008E09EC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		93154ED91AB7FBD6008E09EC /* Boom Diggity-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Boom Diggity-Info.plist"; sourceTree = "<group>"; };
+		93154EDB1AB7FBD6008E09EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93154EDD1AB7FBD6008E09EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93154EDF1AB7FBD6008E09EC /* Boom Diggity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Boom Diggity-Prefix.pch"; sourceTree = "<group>"; };
+		93154EE01AB7FBD6008E09EC /* BDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppDelegate.h; sourceTree = "<group>"; };
+		93154EE11AB7FBD6008E09EC /* BDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppDelegate.m; sourceTree = "<group>"; };
+		93154EE41AB7FBD6008E09EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93154EE61AB7FBD6008E09EC /* BDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
+		93154EE71AB7FBD6008E09EC /* BDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
+		93154EE91AB7FBD6008E09EC /* BDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMyScene.h; sourceTree = "<group>"; };
+		93154EEA1AB7FBD6008E09EC /* BDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMyScene.m; sourceTree = "<group>"; };
+		93154EEC1AB7FBD6008E09EC /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		93154EEE1AB7FBD6008E09EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93154EF41AB7FBD6008E09EC /* Boom DiggityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boom DiggityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93154EF51AB7FBD6008E09EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		93154EFD1AB7FBD6008E09EC /* Boom DiggityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Boom DiggityTests-Info.plist"; sourceTree = "<group>"; };
+		93154EFF1AB7FBD6008E09EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93154F011AB7FBD6008E09EC /* Boom_DiggityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boom_DiggityTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93154EC91AB7FBD6008E09EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93154ED21AB7FBD6008E09EC /* CoreGraphics.framework in Frameworks */,
+				93154ED41AB7FBD6008E09EC /* UIKit.framework in Frameworks */,
+				93154ED61AB7FBD6008E09EC /* SpriteKit.framework in Frameworks */,
+				93154ED01AB7FBD6008E09EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93154EF11AB7FBD6008E09EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93154EF61AB7FBD6008E09EC /* XCTest.framework in Frameworks */,
+				93154EF81AB7FBD6008E09EC /* UIKit.framework in Frameworks */,
+				93154EF71AB7FBD6008E09EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93154EC31AB7FBD6008E09EC = {
+			isa = PBXGroup;
+			children = (
+				93154ED71AB7FBD6008E09EC /* Boom Diggity */,
+				93154EFB1AB7FBD6008E09EC /* Boom DiggityTests */,
+				93154ECE1AB7FBD6008E09EC /* Frameworks */,
+				93154ECD1AB7FBD6008E09EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93154ECD1AB7FBD6008E09EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93154ECC1AB7FBD6008E09EC /* Boom Diggity.app */,
+				93154EF41AB7FBD6008E09EC /* Boom DiggityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93154ECE1AB7FBD6008E09EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93154ECF1AB7FBD6008E09EC /* Foundation.framework */,
+				93154ED11AB7FBD6008E09EC /* CoreGraphics.framework */,
+				93154ED31AB7FBD6008E09EC /* UIKit.framework */,
+				93154ED51AB7FBD6008E09EC /* SpriteKit.framework */,
+				93154EF51AB7FBD6008E09EC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93154ED71AB7FBD6008E09EC /* Boom Diggity */ = {
+			isa = PBXGroup;
+			children = (
+				93154EE01AB7FBD6008E09EC /* BDAppDelegate.h */,
+				93154EE11AB7FBD6008E09EC /* BDAppDelegate.m */,
+				93154EE31AB7FBD6008E09EC /* Main.storyboard */,
+				93154EE61AB7FBD6008E09EC /* BDViewController.h */,
+				93154EE71AB7FBD6008E09EC /* BDViewController.m */,
+				93154EE91AB7FBD6008E09EC /* BDMyScene.h */,
+				93154EEA1AB7FBD6008E09EC /* BDMyScene.m */,
+				93154EEC1AB7FBD6008E09EC /* Spaceship.png */,
+				93154EEE1AB7FBD6008E09EC /* Images.xcassets */,
+				93154ED81AB7FBD6008E09EC /* Supporting Files */,
+			);
+			path = "Boom Diggity";
+			sourceTree = "<group>";
+		};
+		93154ED81AB7FBD6008E09EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93154ED91AB7FBD6008E09EC /* Boom Diggity-Info.plist */,
+				93154EDA1AB7FBD6008E09EC /* InfoPlist.strings */,
+				93154EDD1AB7FBD6008E09EC /* main.m */,
+				93154EDF1AB7FBD6008E09EC /* Boom Diggity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93154EFB1AB7FBD6008E09EC /* Boom DiggityTests */ = {
+			isa = PBXGroup;
+			children = (
+				93154F011AB7FBD6008E09EC /* Boom_DiggityTests.m */,
+				93154EFC1AB7FBD6008E09EC /* Supporting Files */,
+			);
+			path = "Boom DiggityTests";
+			sourceTree = "<group>";
+		};
+		93154EFC1AB7FBD6008E09EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93154EFD1AB7FBD6008E09EC /* Boom DiggityTests-Info.plist */,
+				93154EFE1AB7FBD6008E09EC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93154ECB1AB7FBD6008E09EC /* Boom Diggity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93154F051AB7FBD6008E09EC /* Build configuration list for PBXNativeTarget "Boom Diggity" */;
+			buildPhases = (
+				93154EC81AB7FBD6008E09EC /* Sources */,
+				93154EC91AB7FBD6008E09EC /* Frameworks */,
+				93154ECA1AB7FBD6008E09EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Boom Diggity";
+			productName = "Boom Diggity";
+			productReference = 93154ECC1AB7FBD6008E09EC /* Boom Diggity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93154EF31AB7FBD6008E09EC /* Boom DiggityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93154F081AB7FBD6008E09EC /* Build configuration list for PBXNativeTarget "Boom DiggityTests" */;
+			buildPhases = (
+				93154EF01AB7FBD6008E09EC /* Sources */,
+				93154EF11AB7FBD6008E09EC /* Frameworks */,
+				93154EF21AB7FBD6008E09EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93154EFA1AB7FBD6008E09EC /* PBXTargetDependency */,
+			);
+			name = "Boom DiggityTests";
+			productName = "Boom DiggityTests";
+			productReference = 93154EF41AB7FBD6008E09EC /* Boom DiggityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93154EC41AB7FBD6008E09EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sidecar Games";
+				TargetAttributes = {
+					93154EF31AB7FBD6008E09EC = {
+						TestTargetID = 93154ECB1AB7FBD6008E09EC;
+					};
+				};
+			};
+			buildConfigurationList = 93154EC71AB7FBD6008E09EC /* Build configuration list for PBXProject "Boom Diggity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93154EC31AB7FBD6008E09EC;
+			productRefGroup = 93154ECD1AB7FBD6008E09EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93154ECB1AB7FBD6008E09EC /* Boom Diggity */,
+				93154EF31AB7FBD6008E09EC /* Boom DiggityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93154ECA1AB7FBD6008E09EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93154EDC1AB7FBD6008E09EC /* InfoPlist.strings in Resources */,
+				93154EEF1AB7FBD6008E09EC /* Images.xcassets in Resources */,
+				93154EED1AB7FBD6008E09EC /* Spaceship.png in Resources */,
+				93154EE51AB7FBD6008E09EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93154EF21AB7FBD6008E09EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93154F001AB7FBD6008E09EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93154EC81AB7FBD6008E09EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93154EEB1AB7FBD6008E09EC /* BDMyScene.m in Sources */,
+				93154EE81AB7FBD6008E09EC /* BDViewController.m in Sources */,
+				93154EE21AB7FBD6008E09EC /* BDAppDelegate.m in Sources */,
+				93154EDE1AB7FBD6008E09EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93154EF01AB7FBD6008E09EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93154F021AB7FBD6008E09EC /* Boom_DiggityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93154EFA1AB7FBD6008E09EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93154ECB1AB7FBD6008E09EC /* Boom Diggity */;
+			targetProxy = 93154EF91AB7FBD6008E09EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93154EDA1AB7FBD6008E09EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93154EDB1AB7FBD6008E09EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93154EE31AB7FBD6008E09EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93154EE41AB7FBD6008E09EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93154EFE1AB7FBD6008E09EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93154EFF1AB7FBD6008E09EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93154F031AB7FBD6008E09EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93154F041AB7FBD6008E09EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93154F061AB7FBD6008E09EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Boom Diggity/Boom Diggity-Prefix.pch";
+				INFOPLIST_FILE = "Boom Diggity/Boom Diggity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93154F071AB7FBD6008E09EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Boom Diggity/Boom Diggity-Prefix.pch";
+				INFOPLIST_FILE = "Boom Diggity/Boom Diggity-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		93154F091AB7FBD6008E09EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Boom Diggity.app/Boom Diggity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Boom Diggity/Boom Diggity-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Boom DiggityTests/Boom DiggityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		93154F0A1AB7FBD6008E09EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Boom Diggity.app/Boom Diggity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Boom Diggity/Boom Diggity-Prefix.pch";
+				INFOPLIST_FILE = "Boom DiggityTests/Boom DiggityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93154EC71AB7FBD6008E09EC /* Build configuration list for PBXProject "Boom Diggity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93154F031AB7FBD6008E09EC /* Debug */,
+				93154F041AB7FBD6008E09EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93154F051AB7FBD6008E09EC /* Build configuration list for PBXNativeTarget "Boom Diggity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93154F061AB7FBD6008E09EC /* Debug */,
+				93154F071AB7FBD6008E09EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93154F081AB7FBD6008E09EC /* Build configuration list for PBXNativeTarget "Boom DiggityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93154F091AB7FBD6008E09EC /* Debug */,
+				93154F0A1AB7FBD6008E09EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93154EC41AB7FBD6008E09EC /* Project object */;
+}
