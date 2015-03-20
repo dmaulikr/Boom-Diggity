@@ -16,14 +16,15 @@
 		93154EE21AB7FBD6008E09EC /* BDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EE11AB7FBD6008E09EC /* BDAppDelegate.m */; };
 		93154EE51AB7FBD6008E09EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93154EE31AB7FBD6008E09EC /* Main.storyboard */; };
 		93154EE81AB7FBD6008E09EC /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EE71AB7FBD6008E09EC /* BDViewController.m */; };
-		93154EEB1AB7FBD6008E09EC /* BDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154EEA1AB7FBD6008E09EC /* BDMyScene.m */; };
-		93154EED1AB7FBD6008E09EC /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 93154EEC1AB7FBD6008E09EC /* Spaceship.png */; };
 		93154EEF1AB7FBD6008E09EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93154EEE1AB7FBD6008E09EC /* Images.xcassets */; };
 		93154EF61AB7FBD6008E09EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154EF51AB7FBD6008E09EC /* XCTest.framework */; };
 		93154EF71AB7FBD6008E09EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ECF1AB7FBD6008E09EC /* Foundation.framework */; };
 		93154EF81AB7FBD6008E09EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93154ED31AB7FBD6008E09EC /* UIKit.framework */; };
 		93154F001AB7FBD6008E09EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93154EFE1AB7FBD6008E09EC /* InfoPlist.strings */; };
 		93154F021AB7FBD6008E09EC /* Boom_DiggityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154F011AB7FBD6008E09EC /* Boom_DiggityTests.m */; };
+		93154F0D1AB7FC11008E09EC /* BDGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154F0C1AB7FC11008E09EC /* BDGameScene.m */; };
+		936C2EAF1AB7FDAC00268F04 /* BDExplodingBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C2EAE1AB7FDAC00268F04 /* BDExplodingBall.m */; };
+		938FAED31AB9300700D04FAC /* Balls.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 938FAED21AB9300700D04FAC /* Balls.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,15 +52,17 @@
 		93154EE41AB7FBD6008E09EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93154EE61AB7FBD6008E09EC /* BDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
 		93154EE71AB7FBD6008E09EC /* BDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
-		93154EE91AB7FBD6008E09EC /* BDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMyScene.h; sourceTree = "<group>"; };
-		93154EEA1AB7FBD6008E09EC /* BDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMyScene.m; sourceTree = "<group>"; };
-		93154EEC1AB7FBD6008E09EC /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		93154EEE1AB7FBD6008E09EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93154EF41AB7FBD6008E09EC /* Boom DiggityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Boom DiggityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93154EF51AB7FBD6008E09EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		93154EFD1AB7FBD6008E09EC /* Boom DiggityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Boom DiggityTests-Info.plist"; sourceTree = "<group>"; };
 		93154EFF1AB7FBD6008E09EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93154F011AB7FBD6008E09EC /* Boom_DiggityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boom_DiggityTests.m; sourceTree = "<group>"; };
+		93154F0B1AB7FC11008E09EC /* BDGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDGameScene.h; sourceTree = "<group>"; };
+		93154F0C1AB7FC11008E09EC /* BDGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDGameScene.m; sourceTree = "<group>"; };
+		936C2EAD1AB7FDAC00268F04 /* BDExplodingBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDExplodingBall.h; sourceTree = "<group>"; };
+		936C2EAE1AB7FDAC00268F04 /* BDExplodingBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDExplodingBall.m; sourceTree = "<group>"; };
+		938FAED21AB9300700D04FAC /* Balls.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Balls.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +124,16 @@
 		93154ED71AB7FBD6008E09EC /* Boom Diggity */ = {
 			isa = PBXGroup;
 			children = (
+				938FAED21AB9300700D04FAC /* Balls.atlas */,
 				93154EE01AB7FBD6008E09EC /* BDAppDelegate.h */,
 				93154EE11AB7FBD6008E09EC /* BDAppDelegate.m */,
 				93154EE31AB7FBD6008E09EC /* Main.storyboard */,
 				93154EE61AB7FBD6008E09EC /* BDViewController.h */,
 				93154EE71AB7FBD6008E09EC /* BDViewController.m */,
-				93154EE91AB7FBD6008E09EC /* BDMyScene.h */,
-				93154EEA1AB7FBD6008E09EC /* BDMyScene.m */,
-				93154EEC1AB7FBD6008E09EC /* Spaceship.png */,
+				93154F0B1AB7FC11008E09EC /* BDGameScene.h */,
+				93154F0C1AB7FC11008E09EC /* BDGameScene.m */,
+				936C2EAD1AB7FDAC00268F04 /* BDExplodingBall.h */,
+				936C2EAE1AB7FDAC00268F04 /* BDExplodingBall.m */,
 				93154EEE1AB7FBD6008E09EC /* Images.xcassets */,
 				93154ED81AB7FBD6008E09EC /* Supporting Files */,
 			);
@@ -243,8 +248,8 @@
 			files = (
 				93154EDC1AB7FBD6008E09EC /* InfoPlist.strings in Resources */,
 				93154EEF1AB7FBD6008E09EC /* Images.xcassets in Resources */,
-				93154EED1AB7FBD6008E09EC /* Spaceship.png in Resources */,
 				93154EE51AB7FBD6008E09EC /* Main.storyboard in Resources */,
+				938FAED31AB9300700D04FAC /* Balls.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93154EEB1AB7FBD6008E09EC /* BDMyScene.m in Sources */,
 				93154EE81AB7FBD6008E09EC /* BDViewController.m in Sources */,
 				93154EE21AB7FBD6008E09EC /* BDAppDelegate.m in Sources */,
+				936C2EAF1AB7FDAC00268F04 /* BDExplodingBall.m in Sources */,
 				93154EDE1AB7FBD6008E09EC /* main.m in Sources */,
+				93154F0D1AB7FC11008E09EC /* BDGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +479,7 @@
 				93154F071AB7FBD6008E09EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93154F081AB7FBD6008E09EC /* Build configuration list for PBXNativeTarget "Boom DiggityTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +488,7 @@
 				93154F0A1AB7FBD6008E09EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

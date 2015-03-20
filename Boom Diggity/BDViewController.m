@@ -7,7 +7,7 @@
 //
 
 #import "BDViewController.h"
-#import "BDMyScene.h"
+#import "BDGameScene.h"
 
 @implementation BDViewController
 
@@ -17,11 +17,11 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    //skView.showsFPS = YES;
+    //skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [BDMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [BDGameScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
@@ -29,6 +29,11 @@
 }
 
 - (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
