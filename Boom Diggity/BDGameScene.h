@@ -11,9 +11,6 @@
 @interface BDGameScene : SKScene <SKPhysicsContactDelegate>
 
 @property (nonatomic) int currentLevel;
-@property (nonatomic) CGFloat ballArea;
-@property (nonatomic) int ballsLeft;
-@property (nonatomic) int livesLeft;
-@property (nonatomic) BOOL gamePaused;
+@property (nonatomic) BOOL isMenuShowing;
 
 @end

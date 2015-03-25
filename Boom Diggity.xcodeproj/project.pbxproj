@@ -25,6 +25,8 @@
 		93154F0D1AB7FC11008E09EC /* BDGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 93154F0C1AB7FC11008E09EC /* BDGameScene.m */; };
 		936C2EAF1AB7FDAC00268F04 /* BDExplodingBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 936C2EAE1AB7FDAC00268F04 /* BDExplodingBall.m */; };
 		938FAED31AB9300700D04FAC /* Balls.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 938FAED21AB9300700D04FAC /* Balls.atlas */; };
+		93E29F691ABFD3B0005AFF1A /* BDMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E29F681ABFD3B0005AFF1A /* BDMenu.m */; };
+		93E29F6B1ABFF4CB005AFF1A /* HappySongMono.caf in Resources */ = {isa = PBXBuildFile; fileRef = 93E29F6A1ABFF4CB005AFF1A /* HappySongMono.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		936C2EAD1AB7FDAC00268F04 /* BDExplodingBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDExplodingBall.h; sourceTree = "<group>"; };
 		936C2EAE1AB7FDAC00268F04 /* BDExplodingBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDExplodingBall.m; sourceTree = "<group>"; };
 		938FAED21AB9300700D04FAC /* Balls.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Balls.atlas; sourceTree = "<group>"; };
+		93E29F671ABFD3B0005AFF1A /* BDMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDMenu.h; sourceTree = "<group>"; };
+		93E29F681ABFD3B0005AFF1A /* BDMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDMenu.m; sourceTree = "<group>"; };
+		93E29F6A1ABFF4CB005AFF1A /* HappySongMono.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HappySongMono.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,7 @@
 		93154ED71AB7FBD6008E09EC /* Boom Diggity */ = {
 			isa = PBXGroup;
 			children = (
+				93E29F6C1ABFF4D3005AFF1A /* Sounds */,
 				938FAED21AB9300700D04FAC /* Balls.atlas */,
 				93154EE01AB7FBD6008E09EC /* BDAppDelegate.h */,
 				93154EE11AB7FBD6008E09EC /* BDAppDelegate.m */,
@@ -132,6 +138,8 @@
 				93154EE71AB7FBD6008E09EC /* BDViewController.m */,
 				93154F0B1AB7FC11008E09EC /* BDGameScene.h */,
 				93154F0C1AB7FC11008E09EC /* BDGameScene.m */,
+				93E29F671ABFD3B0005AFF1A /* BDMenu.h */,
+				93E29F681ABFD3B0005AFF1A /* BDMenu.m */,
 				936C2EAD1AB7FDAC00268F04 /* BDExplodingBall.h */,
 				936C2EAE1AB7FDAC00268F04 /* BDExplodingBall.m */,
 				93154EEE1AB7FBD6008E09EC /* Images.xcassets */,
@@ -167,6 +175,14 @@
 				93154EFE1AB7FBD6008E09EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93E29F6C1ABFF4D3005AFF1A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				93E29F6A1ABFF4CB005AFF1A /* HappySongMono.caf */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +266,7 @@
 				93154EEF1AB7FBD6008E09EC /* Images.xcassets in Resources */,
 				93154EE51AB7FBD6008E09EC /* Main.storyboard in Resources */,
 				938FAED31AB9300700D04FAC /* Balls.atlas in Resources */,
+				93E29F6B1ABFF4CB005AFF1A /* HappySongMono.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +289,7 @@
 				93154EE21AB7FBD6008E09EC /* BDAppDelegate.m in Sources */,
 				936C2EAF1AB7FDAC00268F04 /* BDExplodingBall.m in Sources */,
 				93154EDE1AB7FBD6008E09EC /* main.m in Sources */,
+				93E29F691ABFD3B0005AFF1A /* BDMenu.m in Sources */,
 				93154F0D1AB7FC11008E09EC /* BDGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

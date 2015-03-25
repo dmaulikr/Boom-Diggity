@@ -12,7 +12,7 @@
 
 static const int kBallSpeed = 40;
 static const int kExplodingBallWaitTime = 2;
-static const CGFloat kSizeOfExplodingBall = 1.7;//size multiplier
+static const CGFloat kSizeOfExplodingBall = 2;//size multiplier
 
 -(instancetype)initRandomBallWithinFrame:(CGRect)frame
 {

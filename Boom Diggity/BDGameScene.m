@@ -8,16 +8,22 @@
 
 #import "BDGameScene.h"
 #import "BDExplodingBall.h"
+#import "BDMenu.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation BDGameScene
 {
     // Main View Elements
     SKNode *_mainLayer;
+    SKScene *_pauseScene;
     BOOL _ranInitialExplosion;
     BDExplodingBall *_explodingBall;
     int _numberOfBallsOnScreen;
     //int _numberOfCreatedExplosions;
     NSArray *_levelWinValues;
+    AVAudioPlayer *_backgroundMusic;
+    BDMenu *_menu;
+    SKLabelNode *_goalLabel;
 }
 
 -(id)initWithSize:(CGSize)size
@@ -39,26 +45,55 @@
         _mainLayer = [SKNode node];
         [self addChild:_mainLayer];
         
+        // Create menu
+        _menu = [[BDMenu alloc]initWithScene:self];
+        [self addChild:_menu];
+        
+        // Create goal label
+        _goalLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
+        _goalLabel.fontColor = [SKColor whiteColor];
+        _goalLabel.fontSize = 20;
+        _goalLabel.text = [NSString stringWithFormat:@"Goal: %i/%i",0,_currentLevel];
+        _goalLabel.position = CGPointMake(40, 0);
+        [self addChild:_goalLabel];
+        
+        // Create background music
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"HappySongMono" withExtension:@"caf"];
+        NSError *error = nil;
+        _backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+        if (!_backgroundMusic) {
+            NSLog(@"Error loading audio player: %@", error);
+        }
+        else {
+            _backgroundMusic.numberOfLoops = -1;
+            _backgroundMusic.volume = 0.2;
+        }
+        
         // Initialize game values
-        _numberOfBallsOnScreen = 0;
         _currentLevel = 0;
         
         // Initialize game win conditions
-        _levelWinValues = @[@0,@1,@2,@3,@5,@7,@10,@15,@21,@27,@33,@44,@55];
+        _levelWinValues = @[@0,@1,@2,@3,@5,@7,@10,@15,@21,@27,@33,@40,@50,@55];
+        //                      5 10 15 20 25  30  35  40  45  50  55  60  65
         
         // Create a new game
+        //[_backgroundMusic play];
         [self loadNextLevel];
+        
+        
     }
     
     return self;
 }
+
+
 
 // LEVEL CREATION
 
 -(void)loadNextLevel
 {
     _currentLevel++;
-    _numberOfBallsOnScreen += 5;
+    _numberOfBallsOnScreen = _currentLevel * 5;
     //_numberOfCreatedExplosions = 0;
     _ranInitialExplosion = NO;
     
@@ -66,12 +101,26 @@
     
     // Create background
     self.backgroundColor = [SKColor blackColor];
-    
+    self.isMenuShowing = YES;
     
     BDExplodingBall *randomBall;
     for (int i = 0; i < _numberOfBallsOnScreen; i++) {
         randomBall = [[BDExplodingBall alloc] initRandomBallWithinFrame:self.frame];
         [_mainLayer addChild:randomBall];
+    }
+}
+
+// VARIABLE HANDLING
+
+-(void)setIsMenuShowing:(BOOL)isMenuShowing
+{
+    _isMenuShowing = isMenuShowing;
+    
+    if (_isMenuShowing) {
+        [_menu showMenu];
+    }
+    else{
+        [_menu hideMenu];
     }
 }
 
@@ -105,21 +154,6 @@
     }
 }
 
-// FRAME UPDATE HANDLING
-
--(void)didSimulatePhysics
-{
-    // Make the "ball" nodes travel at a constant velocity by normalizing their vectors and then multiplying them by the _ballSpeed
-    [_mainLayer enumerateChildNodesWithName:@"ball" usingBlock:^(SKNode *node, BOOL *stop) {
-        CGFloat xVel = node.physicsBody.velocity.dx;
-        CGFloat yVel = node.physicsBody.velocity.dy;
-        CGFloat unit = sqrt(pow(xVel,2) + pow(yVel,2));
-        int ballSpeed = [(BDExplodingBall *)node getBallSpeed];
-        node.physicsBody.velocity = CGVectorMake(xVel/unit * ballSpeed, yVel/unit * ballSpeed);
-        
-    }];
-}
-
 -(void)update:(NSTimeInterval)currentTime
 {
     if (_ranInitialExplosion && [self isLevelComplete])
@@ -139,7 +173,7 @@
             _numberOfBallsOnScreen -= 5;
         }
         
-        if (_currentLevel == 12) {
+        if (_currentLevel == 13) {
             // Restart the game
             _currentLevel = 0;
             _numberOfBallsOnScreen = 0;
@@ -149,6 +183,7 @@
     
     // If you exploded enough balls change the background color
     if ([self numberOfBallsExploded] == [[_levelWinValues objectAtIndex:_currentLevel] intValue]) {
+        //self.backgroundColor = [SKColor colorWithRed:.996 green:.733 blue:.031 alpha:1.0];
         self.backgroundColor = [SKColor whiteColor];
     }
 }
@@ -196,7 +231,10 @@
         CGPoint location = [touch locationInNode:self];
         //SKNode *node = [self nodeAtPoint:location];
         
-        if (!_ranInitialExplosion) {
+        if (_isMenuShowing) {
+            self.isMenuShowing = NO;
+        }
+        else if (!_ranInitialExplosion) {
             _explodingBall = [[BDExplodingBall alloc] initWithPosition:location
                                                               andColor:@"BallGray"];
             [_mainLayer addChild:_explodingBall];
